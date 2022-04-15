@@ -18,7 +18,7 @@
 // // let firstName = "John";
 // // let city = "New-York";
 // // console.log(lastName, firstName, city);
-// //window.alert("Nom:" + lastName + "\nPrénom:" + firstName + "\nVille" + city);
+// //alert("Nom:" + lastName + "\nPrénom:" + firstName + "\nVille" + city);
 /************************************exercice 5 ************************************************************/
 
 
@@ -71,14 +71,51 @@
 //     console.log(compter*10);
 // }
 
-//*********************************exercice 4 ***************************************************************/
+//*********************************exercice 5 ***************************************************************/
 
 //Création d'une 'fonction' qui permet de compter le nombre de lettre dans ma variable 'text'. On utilise la fonction = length//
-let text = 'Sabah est en galère.';
-let length = text.length;
-let para = document.getElementById('prenom').innerHTML = length;
+// let text = 'Sabah est en galère.';
+// let length = text.length;
+// let para = document.getElementById('prenom').innerHTML = length;
 
-//*********************************exercice 5 ***************************************************************/
+//*********************************exercice 6 **************************************************************/
+// Ici on met le titre en majuscule en utilisant la méthode 'uppercase'
+//je déclare ma constante et j'appelle le 'h1' avec un queryselector
+//j'appelle la 'méthode' : 	******object.style.textTransform="uppercase"***** pour mettre en majuscule
+const title = document.querySelector('h1');
+title.style.textTransform ="uppercase";
+// console.log(title.toUpperCase())
+
+//mettre un paragraphe en minuscule : syntaxe = object.style.textTransform="lowercase"
+const first = document.querySelector('#first');
+// console.log(first)
+first.style.textTransform = 'lowercase';
+
+
+
+//Changer la couleur d'un texte avec la syntaxe : 
+// function changecouleur(couleur) {
+//     document.getElementById('texte').style.color = couleur;
+//   }
+//je ne déclare pas de variable, je crée la fonction directement. 
+//j'appelle mon "id" et je lui dis ce que je veux que la fonction fasse (style.color) et ensuite je rappelle le paramètre 'couleur' et enfin j'appelle ma fonction en lui donnant la couleur que je veux qu'elle applique. 
+// function changecouleur(couleur) {
+//     document.getElementById("second").style.color = couleur;
+// }
+// changecouleur('red');
+// // console.log(changecouleur)
+
+
+//Cacher un paragraphe, je déclare ma constante third qui est mon 'id'. je l'appelle avec'getElementById. ensuite, je fais disparaitre mon paragraphe avec objet.style.display = 'none';
+const third = document.getElementById('third');
+third.style.display = 'none';
+
+
+//**************************************page 3 ****************************************/
+//***********************************exercice 1 ***************************************/
+//insérer une image dans html et la faire s'aagrandir au clic 
+
+
 
 
 
